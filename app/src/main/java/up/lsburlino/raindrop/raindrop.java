@@ -7,7 +7,7 @@ import android.graphics.Paint;
 import java.util.Random;
 
 /*
-    Luca Sburlino
+    @author Luca Sburlino
     CS 301
     Raindrop Class. This class holds the value of a raindrop and has a function to print itself
     to the screen.

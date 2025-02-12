@@ -8,7 +8,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 /*
-    Luca Sburlino
+    @author Luca Sburlino
     CS 301
     Main activity class. Controls what shows up when app is run.
     Currently unchanged.

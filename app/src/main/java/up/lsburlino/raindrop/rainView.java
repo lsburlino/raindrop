@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 /*
-    Luca Sburlino
+    @author Luca Sburlino
     CS 301
     rainView Class. This class creates the rainView subclass of surfaceview.
     This class uses raindrops to create a picture.
