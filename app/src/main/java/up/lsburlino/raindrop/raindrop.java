@@ -6,7 +6,7 @@ import android.graphics.Paint;
 
 import java.util.Random;
 
-/*
+/**
     @author Luca Sburlino
     CS 301
     Raindrop Class. This class holds the value of a raindrop and has a function to print itself
@@ -39,6 +39,27 @@ public class raindrop {
     //Draws raindrop on canvas when called
     public void draw(Canvas canvas) {
         canvas.drawCircle(x, y, size, dropPaint);
+    }
+
+    //returns raindrop color
+    public Paint getPaint(){
+        return this.dropPaint;
+    }
+
+    //returns raindrop coordinates
+    public int getX() {
+        return this.x;
+    }
+    public int getY(){
+        return this.y;
+    }
+
+    //change x and y of the raindrop
+    public void changeX(int x){
+        this.x = x;
+    }
+    public void changeY(int y){
+        this.y = y;
     }
 }
 

@@ -1,17 +1,17 @@
 package up.lsburlino.raindrop;
 
 import android.os.Bundle;
+import android.widget.SeekBar;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-/*
+/**
     @author Luca Sburlino
     CS 301
     Main activity class. Controls what shows up when app is run.
-    Currently unchanged.
  */
 public class MainActivity extends AppCompatActivity {
 
@@ -26,6 +26,20 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
+        //setting up rain controller
+        rainView rainview = findViewById(R.id.rainView);
+        rainUDController upDown = new rainUDController(rainview);
+        rainLRController leftRight = new rainLRController(rainview);
+
+        //setting up seekBars
+        SeekBar xVal = findViewById(R.id.Xval);
+        xVal.setOnSeekBarChangeListener(leftRight);
+        SeekBar yVal = findViewById(R.id.Yval);
+        yVal.setOnSeekBarChangeListener(upDown);
+
+        //set initial value of seekbars
+        xVal.setProgress(rainview.theDrop.getX());
+        yVal.setProgress(rainview.theDrop.getY());
 
     }
 }

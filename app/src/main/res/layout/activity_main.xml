@@ -57,9 +57,9 @@
                 android:id="@+id/Xval"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="6dp"
                 android:max="800"
-                android:scaleY="2"
-                android:layout_margin="6dp"/>
+                android:scaleY="2" />
 
             <SeekBar
                 android:id="@+id/Yval"
